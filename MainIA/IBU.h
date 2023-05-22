@@ -10,6 +10,14 @@ public:
 	ibu(string pNama) : nama(pNama) {
 		cout << "Ibu \"" << nama << "\" ada \n";
 	}
-
+	~ibu() {
+		cout << "Ibu \"" << nama << "\" tidak ada \n";
+	}
+	void tambahAnak(anak*);
+	void cetakAnak();
 };
-#endif // !IBU_H
+
+void ibu::tambahAnak(anak* pAnak) {
+	daftar_anak.push_back(pAnak);
+}
+#endif
