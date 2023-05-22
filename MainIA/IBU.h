@@ -1,11 +1,15 @@
 #pragma once
 #ifndef IBU_H
 #define IBU_H
+#include <iostream>
+#include "ANAK.h"
+#include <vector>
+using namespace std;
 
 class ibu {
 public:
 	string nama;
-	vektor<anak> daftar_anak;
+	vector<anak> daftar_anak;
 
 	ibu(string pNama) : nama(pNama) {
 		cout << "Ibu \"" << nama << "\" ada \n";
